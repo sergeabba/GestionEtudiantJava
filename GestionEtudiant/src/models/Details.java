@@ -10,14 +10,14 @@ import java.util.List;
 
 /**
  *
- * @author abbas
+ * @author acer
  */
-public  class Details {
+public class Details {
     private String annee;
     private List<String> modules=new ArrayList();
-    //ManyToOne
-    private Classe classe;
-    private Professeur professeur;
+    //ManytoOne
+    private Classe cl;
+    private Professeur Professeur;
 
     public Details(String annee) {
         this.annee = annee;
@@ -42,20 +42,23 @@ public  class Details {
         this.modules = modules;
     }
 
-    public Classe getClasse() {
-        return classe;
+    public Classe getCl() {
+        return cl;
     }
 
-    public void setClasse(Classe classe) {
-        this.classe = classe;
+    public void setCl(Classe cl) {
+        this.cl = cl;
     }
 
     public Professeur getProfesseur() {
-        return professeur;
+        return Professeur;
     }
 
-    public void setProfesseur(Professeur professeur) {
-        this.professeur = professeur;
+    public void setProfesseur(Professeur Professeur) {
+        this.Professeur = Professeur;
     }
+    
+    
+   
     
 }

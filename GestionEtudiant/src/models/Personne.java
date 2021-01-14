@@ -5,13 +5,22 @@
  */
 package models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
- * @author abbas
+ * @author acer
  */
-public  abstract class Personne {
+public abstract class Personne {
     protected int id;
     protected String nomComplet;
+    private Etudiant Etudiant;
+    private Professeur Professeur;
+    
+    List<String> lString=new ArrayList();
+    
+    
 
     public Personne() {
     }
@@ -41,10 +50,27 @@ public  abstract class Personne {
         this.nomComplet = nomComplet;
     }
 
+    public Etudiant getEtudiant() {
+        return Etudiant;
+    }
+
+    public void setEtudiant(Etudiant Etudiant) {
+        this.Etudiant = Etudiant;
+    }
+
+    public Professeur getProfesseur() {
+        return Professeur;
+    }
+
+    public void setProfesseur(Professeur Professeur) {
+        this.Professeur = Professeur;
+    }
+    
+    
     @Override
     public String toString() {
         return "Personne{" + "id=" + id + ", nomComplet=" + nomComplet + '}';
     }
     
-        
+    
 }

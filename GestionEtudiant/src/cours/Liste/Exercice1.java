@@ -28,7 +28,7 @@ public class Exercice1 {
         */
         // 1- creer une liste string
         List<String> lString=new ArrayList();
-        
+          
         //2- ajouter des elements
         lString.add("Bonjour");
         lString.add("Au revoir");

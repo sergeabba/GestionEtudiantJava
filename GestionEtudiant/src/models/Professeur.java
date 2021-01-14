@@ -10,32 +10,31 @@ import java.util.List;
 
 /**
  *
- * @author abbas
- */  
-public class Professeur extends Personne{
+ * @author acer
+ */
+public class Professeur extends Personne {
     private String grade;
     private List<String> modules=new ArrayList();
-    
 
     public Professeur() {
     }
 
-    public Professeur(String grade, String nomComplet) {
+    public Professeur(String Grade, String nomComplet) {
         super(nomComplet);
-        this.grade = grade;
+        this.grade = Grade;
     }
 
-    public Professeur(String grade, int id, String nomComplet) {
+    public Professeur(String Grade, int id, String nomComplet) {
         super(id, nomComplet);
-        this.grade = grade;
+        this.grade = Grade;
     }
 
     public String getGrade() {
         return grade;
     }
 
-    public void setGrade(String grade) {
-        this.grade = grade;
+    public void setGrade(String Grade) {
+        this.grade = Grade;
     }
 
     @Override
@@ -51,5 +50,7 @@ public class Professeur extends Personne{
         this.modules = modules;
     }
 
+    
+    
     
 }

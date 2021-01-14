@@ -7,15 +7,16 @@ package models;
 
 /**
  *
- * @author abbas
+ * @author acer
  */
-public class Classe { 
+public class Classe {
     private int id;
     private String libelle;
     private int nbre;
-
+    //defaut
     public Classe() {
     }
+    //Surchage
 
     public Classe(int id, String libelle, int nbre) {
         this.id = id;
@@ -28,9 +29,6 @@ public class Classe {
         this.nbre = nbre;
     }
     
-   
-    
-            
 
     public int getId() {
         return id;
@@ -60,6 +58,5 @@ public class Classe {
     public String toString() {
         return "Classe{" + "id=" + id + ", libelle=" + libelle + ", nbre=" + nbre + '}';
     }
-    
     
 }

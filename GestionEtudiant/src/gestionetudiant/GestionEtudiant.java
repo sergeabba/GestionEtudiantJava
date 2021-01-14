@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author abbas
+ * @author acer
  */
 public class GestionEtudiant extends Application {
     

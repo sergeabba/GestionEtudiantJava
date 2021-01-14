@@ -7,13 +7,13 @@ package models;
 
 /**
  *
- * @author abbas
+ * @author acer
  */
-public class Etudiant extends Personne{
+public class Etudiant extends Personne {
     private String tuteur;
-    // ManyToOne (plusieurs etudiants une classe)
+    //ManytoOne
     private Classe cl;
-
+    
     public Etudiant() {
     }
 
@@ -27,9 +27,17 @@ public class Etudiant extends Personne{
         this.tuteur = tuteur;
     }
 
+    public String getTuteur() {
+        return tuteur;
+    }
+
+    public void setTuteur(String tuteur) {
+        this.tuteur = tuteur;
+    }
+
     @Override
     public String toString() {
-        return super.toString()+"Tuteur:"+tuteur; //To change body of generated methods, choose Tools | Templates.
+        return super.toString()+ "Tuteur:"+tuteur; //To change body of generated methods, choose Tools | Templates.
     }
 
     public Classe getCl() {
@@ -41,5 +49,5 @@ public class Etudiant extends Personne{
     }
     
     
-}
     
+}
