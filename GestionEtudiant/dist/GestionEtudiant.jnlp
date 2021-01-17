@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="GestionEtudiant.jnlp">
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="gestionetudiant.jnlp">
   <information>
-    <title>GestionEtudiant</title>
-    <vendor>acer</vendor>
+    <title>gestionetudiant</title>
+    <vendor>user</vendor>
     <description>null</description>
     <offline-allowed/>
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="GestionEtudiant.jar" size="8619" download="eager" />
+    <jar href="gestionetudiant.jar" size="15983" download="eager" />
   </resources>
-  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="GestionEtudiant" >
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="gestionetudiant" >
     <param name="requiredFXVersion" value="8.0+"/>
   </applet-desc>
-  <jfx:javafx-desc  width="800" height="600" main-class="gestionetudiant.GestionEtudiant"  name="GestionEtudiant" />
+  <jfx:javafx-desc  width="800" height="600" main-class="gestionetudiant.Gestionetudiant"  name="gestionetudiant" />
   <update check="always"/>
 </jnlp>
