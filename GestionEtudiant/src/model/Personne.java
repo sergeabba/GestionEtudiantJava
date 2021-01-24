@@ -14,7 +14,7 @@ public abstract class Personne {
     protected String nomComplet;
     protected String type;
     protected String login;
-    protected String mdp;
+    protected String pwd;
     
 
     public Personne() {
@@ -31,7 +31,7 @@ public abstract class Personne {
 
     public Personne(String login, String mdp) {
         this.login = login;
-        this.mdp = mdp;
+        this.pwd = pwd;
     }
 
     public String getLogin() {
@@ -42,12 +42,12 @@ public abstract class Personne {
         this.login = login;
     }
 
-    public String getMdp() {
-        return mdp;
+    public String getPwd() {
+        return pwd;
     }
 
-    public void setMdp(String mdp) {
-        this.mdp = mdp;
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
     }
     
     public String getType() {

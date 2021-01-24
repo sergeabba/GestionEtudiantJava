@@ -20,6 +20,7 @@ import model.Professeur;
  * @author user
  */
 public class Service {
+    
     private DaoClasse daoClasse;
     private DaoPersonne daoPersonne;
     private DaoDetails daoDetails;
@@ -63,14 +64,17 @@ public class Service {
         return daoDetails.insert(details)!=0;
         
     }
-    public List<Personne> listerProfesseur(){
-        return daoPersonne.findAll();
+    public List<Professeur> listerProfesseur(){
+        return daoPersonne.findProfesseur();
     }
-   public List<Details> findModulesByProfesseur(Personne pers){
-       return daoDetails.findModulesByProfesseur(pers);
-   }
-   public List<Details> findModulesByClasse(Classe classe){
-       return daoDetails.findModulesByClasse(classe);
-   }
+    public List<String> listerModulesProfesseurParClasse(Classe classe,Professeur professeur){
+        Details details=new Details(classe,professeur);
+        return daoDetails.findModules(details);
+    }
+    
+    public Personne seConnecter(String login,String pwd){
+        return daoPersonne.findUserConnect(login, pwd);
+    }
+   
     
 }

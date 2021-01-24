@@ -12,10 +12,10 @@ package model;
 public class Admin extends Personne {
 
     public Admin() {
+        type="Admin";
     }
 
-    public Admin(String login, String mdp) {
-        super(login, mdp);
-    }
+   
+    
     
 }

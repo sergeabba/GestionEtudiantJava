@@ -3,25 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cours.Liste;
+package cours.list;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 /**
  *
- * @author abbas
+ * @author user
  */
-public class Exercice2 {
+public class Exercice  {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        List<String> lPersonne=new ArrayList();
-        
+        // TODO code application logic here
+       
+         
+         
     }
-   
     
-   
 }

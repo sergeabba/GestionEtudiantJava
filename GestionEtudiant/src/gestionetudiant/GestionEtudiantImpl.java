@@ -5,21 +5,16 @@
  */
 package gestionetudiant;
 
-import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/**
- *
- * @author user
- */
-public class Gestionetudiant extends Application {
-    
+
+public class GestionEtudiantImpl extends Gestiontudiant {
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("vconnexion.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("classe.fxml"));
         
         Scene scene = new Scene(root);
         
@@ -33,5 +28,4 @@ public class Gestionetudiant extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
 }

@@ -56,7 +56,7 @@ public class Professeur extends Personne {
     public void setModules(List<String> modules) {
         this.modules = modules;
     }
-    
+   
     @Override
     public String toString() {
         return super.toString()+"Grade:"+grade; //To change body of generated methods, choose Tools | Templates.

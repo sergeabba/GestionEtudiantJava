@@ -22,6 +22,11 @@ public class Details {
     public Details(String annee) {
         this.annee = annee;
     }
+
+    public Details(Classe classe, Professeur professeur) {
+        this.classe = classe;
+        this.professeur = professeur;
+    }
     
     public Details() {
     }

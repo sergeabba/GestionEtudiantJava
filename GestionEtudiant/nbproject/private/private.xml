@@ -3,13 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/gestionetudiant/src/gestionetudiant/FXMLDocumentController.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/gestionetudiant/src/metier/Service.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/gestionetudiant/src/model/Personne.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/gestionetudiant/src/dao/DaoClasse.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/gestionetudiant/src/dao/DaoDetails.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/gestionetudiant/src/model/Admin.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/gestionetudiant/src/dao/DaoPersonne.java</file>
+            <file>file:/C:/Users/acer/Documents/NetBeansProjects/gestionetudiant/src/cours/list/Exercice.java</file>
+            <file>file:/C:/Users/acer/Documents/NetBeansProjects/gestionetudiant/src/gestionetudiant/ClasseController.java</file>
+            <file>file:/C:/Users/acer/Documents/NetBeansProjects/gestionetudiant/src/metier/Service.java</file>
         </group>
     </open-files>
 </project-private>
