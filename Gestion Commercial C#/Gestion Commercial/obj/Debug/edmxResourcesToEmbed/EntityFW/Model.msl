@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="gestion_commercialModelStoreContainer" CdmEntityContainer="gestion_commercialEntities1">
+    <EntitySetMapping Name="article">
+      <EntityTypeMapping TypeName="gestion_commercialModel.article">
+        <MappingFragment StoreEntitySet="article">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="reference" ColumnName="reference" />
+          <ScalarProperty Name="libelle" ColumnName="libelle" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="prix" ColumnName="prix" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="categorie">
+      <EntityTypeMapping TypeName="gestion_commercialModel.categorie">
+        <MappingFragment StoreEntitySet="categorie">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="libelle" ColumnName="libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="commande">
+      <EntityTypeMapping TypeName="gestion_commercialModel.commande">
+        <MappingFragment StoreEntitySet="commande">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="details">
+      <EntityTypeMapping TypeName="gestion_commercialModel.details">
+        <MappingFragment StoreEntitySet="details">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="commande_id" ColumnName="commande_id" />
+          <ScalarProperty Name="article_id" ColumnName="article_id" />
+          <ScalarProperty Name="qt" ColumnName="qt" />
+          <ScalarProperty Name="prix" ColumnName="prix" />
+          <ScalarProperty Name="montant" ColumnName="montant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="profil">
+      <EntityTypeMapping TypeName="gestion_commercialModel.profil">
+        <MappingFragment StoreEntitySet="profil">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="libelle" ColumnName="libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="utilisateur">
+      <EntityTypeMapping TypeName="gestion_commercialModel.utilisateur">
+        <MappingFragment StoreEntitySet="utilisateur">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="pwd" ColumnName="pwd" />
+          <ScalarProperty Name="profil_id" ColumnName="profil_id" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="adresse" ColumnName="adresse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

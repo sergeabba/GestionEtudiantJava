@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="gestion_commercialModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="article">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="reference" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stock" Type="Int32" />
+    <Property Name="prix" Type="Int32" />
+  </EntityType>
+  <EntityType Name="categorie">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="commande">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="numero" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="details">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="commande_id" Type="Int32" Nullable="false" />
+    <Property Name="article_id" Type="Int32" Nullable="false" />
+    <Property Name="qt" Type="Int32" />
+    <Property Name="prix" Type="Int32" />
+    <Property Name="montant" Type="Int32" />
+  </EntityType>
+  <EntityType Name="profil">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="utilisateur">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pwd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="profil_id" Type="Int32" />
+    <Property Name="telephone" Type="Int32" />
+    <Property Name="adresse" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="gestion_commercialEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="article" EntityType="Self.article" />
+    <EntitySet Name="categorie" EntityType="Self.categorie" />
+    <EntitySet Name="commande" EntityType="Self.commande" />
+    <EntitySet Name="details" EntityType="Self.details" />
+    <EntitySet Name="profil" EntityType="Self.profil" />
+    <EntitySet Name="utilisateur" EntityType="Self.utilisateur" />
+  </EntityContainer>
+</Schema>

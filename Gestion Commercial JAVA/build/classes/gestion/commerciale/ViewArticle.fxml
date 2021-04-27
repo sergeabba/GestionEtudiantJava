@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="656.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion.commerciale.ViewArticleController">
+   <children>
+      <ScrollPane layoutX="281.0" layoutY="86.0" prefHeight="418.0" prefWidth="361.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="401.0" prefWidth="360.0">
+               <children>
+                  <TableView fx:id="tblArticle" layoutY="1.0" prefHeight="418.0" prefWidth="360.0">
+                    <columns>
+                      <TableColumn fx:id="tbcId" prefWidth="58.0" text="Id" />
+                      <TableColumn fx:id="tbcReference" prefWidth="62.0" text="Référence" />
+                        <TableColumn fx:id="tbcLibelle" prefWidth="61.0" text="Libellé" />
+                        <TableColumn fx:id="tbcStock" prefWidth="57.0" text="Stock" />
+                        <TableColumn fx:id="tbcPrix" prefWidth="60.0" text="Prix" />
+                        <TableColumn fx:id="tbcPrix1" prefWidth="60.0" text="Catégorie" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <TextField fx:id="textReference" layoutX="108.0" layoutY="118.0" />
+      <TextField fx:id="textLibelle" layoutX="108.0" layoutY="176.0" />
+      <TextField fx:id="textPrix" layoutX="108.0" layoutY="304.0" />
+      <TextField fx:id="textStock" layoutX="108.0" layoutY="241.0" />
+      <Label layoutX="32.0" layoutY="122.0" text="Référence">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="308.0" text="Prix">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="245.0" text="Stock">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="180.0" text="Libellé">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="54.0" text="Enregistrer Article" textFill="#2196f3">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="377.0" layoutY="48.0" prefHeight="30.0" prefWidth="203.0" text="Gestion Commercial" textFill="#2196f3">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="172.0" layoutY="423.0" mnemonicParsing="false" onAction="#handleEnregistrerArticle" style="-fx-background-color: #2196f3;" text="Enregistrer">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Separator layoutX="256.0" orientation="VERTICAL" prefHeight="575.0" prefWidth="25.0" />
+      <ComboBox layoutX="108.0" layoutY="360.0" prefWidth="150.0" />
+      <Label layoutX="31.0" layoutY="364.0" text="Categorie">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

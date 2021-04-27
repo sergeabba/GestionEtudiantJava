@@ -1,0 +1,56 @@
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial.csprojAssemblyReference.cache
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\MainWindow.g.cs
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\App.g.cs
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial_Content.g.cs
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial_MarkupCompile.cache
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial_MarkupCompile.lref
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\bin\Debug\Gestion Commercial.exe.config
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\bin\Debug\Gestion Commercial.exe
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\bin\Debug\Gestion Commercial.pdb
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\bin\Debug\EntityFramework.dll
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\bin\Debug\EntityFramework.xml
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\MainWindow.baml
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial.g.resources
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.FArticle.resources
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.FCategorie.resources
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.FConnexion.resources
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.FMenu.resources
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.FProfil.resources
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.Properties.Resources.resources
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial.csproj.GenerateResource.cache
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial.csproj.CoreCompileInputs.cache
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial.csproj.CopyComplete
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial.exe
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial.pdb
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.FUtilisateur.resources
+C:\Users\Djiby DIOP\Desktop\Webmastering\L3\exam\Examen\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.FCommande.resources
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\bin\Debug\Gestion Commercial.exe.config
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\bin\Debug\Gestion Commercial.exe
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\bin\Debug\Gestion Commercial.pdb
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\bin\Debug\EntityFramework.dll
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\bin\Debug\EntityFramework.xml
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial.csprojAssemblyReference.cache
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\MainWindow.g.cs
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\App.g.cs
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial_Content.g.cs
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial_MarkupCompile.cache
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial_MarkupCompile.lref
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\MainWindow.baml
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial.g.resources
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.FArticle.resources
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.FCategorie.resources
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.FCommande.resources
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.FConnexion.resources
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.FMenu.resources
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.FProfil.resources
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.FUtilisateur.resources
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion_Commercial.Properties.Resources.resources
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial.csproj.GenerateResource.cache
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial.csproj.CoreCompileInputs.cache
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial.csproj.CopyComplete
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial.exe
+C:\Users\abbas\Desktop\Examen-master\Gestion Commercial C#\Gestion Commercial\obj\Debug\Gestion Commercial.pdb

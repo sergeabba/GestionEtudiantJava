@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8187F9C6-0C6E-4537-A626-3349DBA93CC9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Gestion_Commercial</RootNamespace>
+    <AssemblyName>Gestion Commercial</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Gestion_Commercial.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="EntityFW\article.cs">
+      <DependentUpon>ModelGestionCommercial.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityFW\categorie.cs">
+      <DependentUpon>ModelGestionCommercial.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityFW\client.cs">
+      <DependentUpon>ModelGestionCommercial.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityFW\commande.cs">
+      <DependentUpon>ModelGestionCommercial.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityFW\details.cs">
+      <DependentUpon>ModelGestionCommercial.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityFW\ModelGestionCommercial.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelGestionCommercial.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityFW\ModelGestionCommercial.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelGestionCommercial.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityFW\ModelGestionCommercial.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelGestionCommercial.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EntityFW\profil.cs">
+      <DependentUpon>ModelGestionCommercial.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityFW\utilisateur.cs">
+      <DependentUpon>ModelGestionCommercial.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FArticle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FArticle.Designer.cs">
+      <DependentUpon>FArticle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCategorie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCategorie.Designer.cs">
+      <DependentUpon>FCategorie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCommande.Designer.cs">
+      <DependentUpon>FCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConnexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConnexion.Designer.cs">
+      <DependentUpon>FConnexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMenu.Designer.cs">
+      <DependentUpon>FMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProfil.Designer.cs">
+      <DependentUpon>FProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUtilisateur.Designer.cs">
+      <DependentUpon>FUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Service\ServiceCategorie.cs" />
+    <Compile Include="Service\IService.cs" />
+    <Compile Include="Service\ServiceArticle.cs" />
+    <Compile Include="Service\ServiceClient.cs" />
+    <Compile Include="Service\ServiceCommande.cs" />
+    <Compile Include="Service\ServiceProfil.cs" />
+    <Compile Include="Service\ServiceSeConnecter.cs" />
+    <Compile Include="Service\ServiceUtilisateur.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="FArticle.resx">
+      <DependentUpon>FArticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCategorie.resx">
+      <DependentUpon>FCategorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCommande.resx">
+      <DependentUpon>FCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConnexion.resx">
+      <DependentUpon>FConnexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMenu.resx">
+      <DependentUpon>FMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProfil.resx">
+      <DependentUpon>FProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUtilisateur.resx">
+      <DependentUpon>FUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="EntityFW\ModelGestionCommercial.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelGestionCommercial.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EntityFW\ModelGestionCommercial.edmx.diagram">
+      <DependentUpon>ModelGestionCommercial.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EntityFW\ModelGestionCommercial.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelGestionCommercial.edmx</DependentUpon>
+      <LastGenOutput>ModelGestionCommercial.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EntityFW\ModelGestionCommercial.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelGestionCommercial.edmx</DependentUpon>
+      <LastGenOutput>ModelGestionCommercial.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

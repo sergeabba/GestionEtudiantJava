@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="gestion_commercialModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="article">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="reference" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="stock" Type="Int32" />
+    <Property Name="prix" Type="Int32" />
+    <Property Name="commande_id" Type="Int32" />
+    <Property Name="categorie_id" Type="Int32" />
+    <NavigationProperty Name="commande" Relationship="Self.FK_article_commande" FromRole="article" ToRole="commande" />
+    <NavigationProperty Name="categorie" Relationship="Self.FK_categorie_article" FromRole="article" ToRole="categorie" />
+    <NavigationProperty Name="details" Relationship="Self.FK_details_article" FromRole="article" ToRole="details" />
+    <NavigationProperty Name="utilisateur" Relationship="Self.FK_utilisateur_article" FromRole="article" ToRole="utilisateur" />
+  </EntityType>
+  <EntityType Name="categorie">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="article_id" Type="Int32" />
+    <NavigationProperty Name="article" Relationship="Self.FK_categorie_article" FromRole="categorie" ToRole="article" />
+  </EntityType>
+  <EntityType Name="client">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tel" Type="Int32" Nullable="false" />
+    <Property Name="utilisateur_id" Type="Int32" />
+    <Property Name="commande_id" Type="Int32" />
+    <NavigationProperty Name="commande" Relationship="Self.FK_client_commande" FromRole="client" ToRole="commande" />
+    <NavigationProperty Name="utilisateur" Relationship="Self.FK_client_utilisateur" FromRole="client" ToRole="utilisateur" />
+  </EntityType>
+  <EntityType Name="commande">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="numero" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="Int32" Nullable="false" />
+    <Property Name="client_id" Type="Int32" />
+    <NavigationProperty Name="article" Relationship="Self.FK_article_commande" FromRole="commande" ToRole="article" />
+    <NavigationProperty Name="client" Relationship="Self.FK_client_commande" FromRole="commande" ToRole="client" />
+    <NavigationProperty Name="details" Relationship="Self.FK_details_commande" FromRole="commande" ToRole="details" />
+  </EntityType>
+  <EntityType Name="details">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="commande_id" Type="Int32" Nullable="false" />
+    <Property Name="article_id" Type="Int32" Nullable="false" />
+    <Property Name="qt" Type="Int32" />
+    <Property Name="prix" Type="Int32" />
+    <Property Name="montant" Type="Int32" />
+    <NavigationProperty Name="article" Relationship="Self.FK_details_article" FromRole="details" ToRole="article" />
+    <NavigationProperty Name="commande" Relationship="Self.FK_details_commande" FromRole="details" ToRole="commande" />
+  </EntityType>
+  <EntityType Name="profil">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="utilisateur" Relationship="Self.FK_utilisateur_profil" FromRole="profil" ToRole="utilisateur" />
+  </EntityType>
+  <EntityType Name="utilisateur">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pwd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="profil_id" Type="Int32" />
+    <Property Name="telephone" Type="Int32" />
+    <Property Name="adresse" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="article_id" Type="Int32" />
+    <NavigationProperty Name="article" Relationship="Self.FK_utilisateur_article" FromRole="utilisateur" ToRole="article" />
+    <NavigationProperty Name="client" Relationship="Self.FK_client_utilisateur" FromRole="utilisateur" ToRole="client" />
+    <NavigationProperty Name="profil" Relationship="Self.FK_utilisateur_profil" FromRole="utilisateur" ToRole="profil" />
+  </EntityType>
+  <Association Name="FK_article_commande">
+    <End Role="commande" Type="Self.commande" Multiplicity="0..1" />
+    <End Role="article" Type="Self.article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="commande">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="article">
+        <PropertyRef Name="commande_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_categorie_article">
+    <End Role="article" Type="Self.article" Multiplicity="0..1" />
+    <End Role="categorie" Type="Self.categorie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="article">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="categorie">
+        <PropertyRef Name="article_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_details_article">
+    <End Role="article" Type="Self.article" Multiplicity="1" />
+    <End Role="details" Type="Self.details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="article">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="details">
+        <PropertyRef Name="article_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_utilisateur_article">
+    <End Role="article" Type="Self.article" Multiplicity="0..1" />
+    <End Role="utilisateur" Type="Self.utilisateur" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="article">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="utilisateur">
+        <PropertyRef Name="article_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_client_commande">
+    <End Role="commande" Type="Self.commande" Multiplicity="0..1" />
+    <End Role="client" Type="Self.client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="commande">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="client">
+        <PropertyRef Name="commande_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_client_utilisateur">
+    <End Role="utilisateur" Type="Self.utilisateur" Multiplicity="0..1" />
+    <End Role="client" Type="Self.client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="utilisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="client">
+        <PropertyRef Name="utilisateur_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_details_commande">
+    <End Role="commande" Type="Self.commande" Multiplicity="1" />
+    <End Role="details" Type="Self.details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="commande">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="details">
+        <PropertyRef Name="commande_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_utilisateur_profil">
+    <End Role="profil" Type="Self.profil" Multiplicity="0..1" />
+    <End Role="utilisateur" Type="Self.utilisateur" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="profil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="utilisateur">
+        <PropertyRef Name="profil_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="gestion_commercialEntities4" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="article" EntityType="Self.article" />
+    <EntitySet Name="categorie" EntityType="Self.categorie" />
+    <EntitySet Name="client" EntityType="Self.client" />
+    <EntitySet Name="commande" EntityType="Self.commande" />
+    <EntitySet Name="details" EntityType="Self.details" />
+    <EntitySet Name="profil" EntityType="Self.profil" />
+    <EntitySet Name="utilisateur" EntityType="Self.utilisateur" />
+    <AssociationSet Name="FK_article_commande" Association="Self.FK_article_commande">
+      <End Role="commande" EntitySet="commande" />
+      <End Role="article" EntitySet="article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_categorie_article" Association="Self.FK_categorie_article">
+      <End Role="article" EntitySet="article" />
+      <End Role="categorie" EntitySet="categorie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_details_article" Association="Self.FK_details_article">
+      <End Role="article" EntitySet="article" />
+      <End Role="details" EntitySet="details" />
+    </AssociationSet>
+    <AssociationSet Name="FK_utilisateur_article" Association="Self.FK_utilisateur_article">
+      <End Role="article" EntitySet="article" />
+      <End Role="utilisateur" EntitySet="utilisateur" />
+    </AssociationSet>
+    <AssociationSet Name="FK_client_commande" Association="Self.FK_client_commande">
+      <End Role="commande" EntitySet="commande" />
+      <End Role="client" EntitySet="client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_client_utilisateur" Association="Self.FK_client_utilisateur">
+      <End Role="utilisateur" EntitySet="utilisateur" />
+      <End Role="client" EntitySet="client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_details_commande" Association="Self.FK_details_commande">
+      <End Role="commande" EntitySet="commande" />
+      <End Role="details" EntitySet="details" />
+    </AssociationSet>
+    <AssociationSet Name="FK_utilisateur_profil" Association="Self.FK_utilisateur_profil">
+      <End Role="profil" EntitySet="profil" />
+      <End Role="utilisateur" EntitySet="utilisateur" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
